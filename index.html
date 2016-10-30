@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>纸牌铁人三项</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+	</head>
+	<body>
+		<div class="body">
+			<div id="myPoker">
+				<ul>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div id="okPoker" class="player" playerId=0>
+				<div class="btns">
+					<a href="javascript:;" class="sure">确定</a>
+					<a href="javascript:;" class="cancel">重置</a>
+					<a href="javascript:;" class="ok">开始</a>
+					<a href="javascript:;" class="goOn">继续</a>
+					<span class="money">0</span>
+				</div>
+				<ul class="ul1">
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+				</ul>
+				<ul class="ul2">
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+				</ul>
+				<ul class="ul3">
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="player1" class="AI player" playerId=1>
+				<ul>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+				</ul>
+				<span class="money">0</span>
+			</div>
+			
+			<div id="player2" class="AI player" playerId=2>
+				<ul>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+				</ul>
+				<span class="money money2">0</span>
+			</div>
+			
+		</div>
+		<div class="guide">
+			<div class="bg"></div>
+			<a href="javascript:;" class="next">继续说明</a>
+			<a href="javascript:;" class="begin">直接开始</a>
+			<div class="tipAI tipAI1">
+				<ul>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="tipAI tipAI2">
+				<ul>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="deck deck1">
+				<ul>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+					<li>
+						<img src="images/pokerB2.jpg"/>
+					</li>
+				</ul>
+				<span class="tipTxt tipTxt1">每局每人获得6张牌，分别以1张、2张和3张分成三组，并每组牌单独对比</span>
+				<span class="tipTxt tipTxt2">第一组，按照最小2，最大A规则比大小，最大胜一番，最小负一番，其他玩家无影响</span>
+				<span class="tipTxt tipTxt3">
+					第二组，按“十点半”规则比较，A为1，人物牌为0.5，两张牌分数超过10.5则为0。按大小对比，最大胜两番，最小负两番，其他玩家无影响。
+				</span>
+				<span class="tipTxt tipTxt4">第三组，按炸金花规则进行对比，最大胜三番，最小负三番，其他玩家无影响。豹子收税三番，非豹子玩家都要缴纳；顺金为一番。如果三组牌都获得胜利额外再收税三番，所有玩家都需缴纳。</span>
+			</div>
+			
+			
+			
+		</div>
+		
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/poker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/controller.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			window.onload = function(){
+				
+				tip();
+				main();
+				
+			};
+		</script>
+	</body>
+</html>
